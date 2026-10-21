@@ -2,7 +2,7 @@
 
 Demo de WhiteMoon Agencia IA para concesionarios. Landing de una página con agente IA ("Nico") de 3 botones que responde, pivota ("esto te lo he respondido yo… ¿te interesa uno así?") y recoge nombre + teléfono.
 
-**Negocio ficticio.** Sin precios, reseñas, cifras, marcas de coches ni matrículas. Los vehículos son ilustraciones propias (SVG) generadas con `scripts/gen_ilustraciones.py`. Teléfono, email y mapa son los de WhiteMoon. La página va con `noindex`.
+**Negocio ficticio.** Sin precios, reseñas, cifras, marcas de coches ni matrículas. Los vehículos son fotos de archivo de Unsplash (ver `CREDITS.md`), no stock real. Teléfono, email y mapa son los de WhiteMoon. La página va con `noindex`.
 
 ## Estructura
 - `index.html` — landing (Hero, Marquee, Sobre nosotros, Servicios, Stock de ejemplo, FAQ, Contacto) + JSON-LD (`AutoDealer`/`MotorcycleDealer`, `BreadcrumbList`, `FAQPage` igual al DOM).
@@ -18,4 +18,4 @@ Fondo `#f6f4ef`, tinta `#14161a`, acento naranja `#c2410c` (texto blanco sobre �
 `python3 -m http.server` en la raíz. Sin npm ni build.
 
 ## Pendiente
-Pasar a un cliente real: sustituir ilustraciones por fotos propias, revisar textos y FAQ con sus condiciones reales, quitar `noindex` y pasar la checklist legal de entrega.
+Pasar a un cliente real: sustituir las fotos de archivo por fotos propias del stock, revisar textos y FAQ con sus condiciones reales, quitar `noindex` y pasar la checklist legal de entrega.
