@@ -28,7 +28,7 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Ilustración de un SUV naranja y una moto naked en un estudio">
+<meta property="og:image:alt" content="Coupé rojo en perfil junto a un edificio">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
@@ -41,7 +41,7 @@
   peso 900, que es el del titular del hero: así el texto ya se pinta con la
   tipografía definitiva y no hay reflow al llegar la fuente. El resto de
   pesos entra por CSS con font-display:swap.
-  Las imágenes son ilustraciones propias (SVG) generadas con scripts/gen_ilustraciones.py.
+  Las fotos son de Unsplash (licencia Unsplash), recortadas y optimizadas; ver CREDITS.md.
 -->
 <!-- Sin favicon el navegador pide /favicon.ico igualmente y el 404 acaba en
      la consola (y en el informe de Lighthouse). Se declaran los tres. -->
@@ -50,7 +50,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
 <link rel="preload" href="assets/fonts/kanit-900-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/img/hero.svg" as="image" fetchpriority="high">
+<link rel="preload" href="assets/img/hero.jpg" as="image" fetchpriority="high">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 <!--
@@ -205,37 +205,37 @@
 
     <!-- [IMG_HERO] -->
     <div class="hero__img magnet" data-magnet data-rv style="--ry:30px; --rdelay:.6s">
-      <img src="assets/img/hero.svg" width="1040" height="693" fetchpriority="high"
-           alt="Ilustración de un SUV naranja y una moto naked grafito en un estudio">
+      <img src="assets/img/hero.jpg" width="1200" height="800" fetchpriority="high"
+           alt="Coupé rojo en perfil junto a un edificio">
     </div>
   </header>
 
   <!-- ================================================ 2. MARQUEE ===== -->
-  <section class="marquee" data-marquee aria-label="Ilustraciones de coches y motos">
+  <section class="marquee" data-marquee aria-label="Fotos de coches y motos">
     <div class="marquee__row">
-      <img src="assets/img/mq-01.svg" width="840" height="540" loading="lazy" alt="Ilustración de un utilitario de color grafito">
-      <img src="assets/img/mq-02.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto naked de color verde">
-      <img src="assets/img/mq-03.svg" width="840" height="540" loading="lazy" alt="Ilustración de una berlina de color rojo">
-      <img src="assets/img/mq-04.svg" width="840" height="540" loading="lazy" alt="Ilustración de un scooter de color azul">
-      <img src="assets/img/mq-05.svg" width="840" height="540" loading="lazy" alt="Ilustración de un SUV de color amarillo">
-      <img src="assets/img/mq-06.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto trail de color naranja">
-      <img src="assets/img/mq-07.svg" width="840" height="540" loading="lazy" alt="Ilustración de un coupé de color blanco">
-      <img src="assets/img/mq-08.svg" width="840" height="540" loading="lazy" alt="Ilustración de un familiar de color plata">
-      <img src="assets/img/mq-09.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto naked de color grafito">
-      <img src="assets/img/mq-10.svg" width="840" height="540" loading="lazy" alt="Ilustración de un utilitario de color verde">
-      <img src="assets/img/mq-11.svg" width="840" height="540" loading="lazy" alt="Ilustración de un scooter de color rojo">
+      <img src="assets/img/mq-01.jpg" width="840" height="540" loading="lazy" alt="Coche clásico de color menta en perfil">
+      <img src="assets/img/mq-02.jpg" width="840" height="540" loading="lazy" alt="Moto naked negra en una carretera">
+      <img src="assets/img/mq-03.jpg" width="840" height="540" loading="lazy" alt="Coche deportivo naranja en perfil">
+      <img src="assets/img/mq-04.jpg" width="840" height="540" loading="lazy" alt="Scooter naranja aparcado en una calle empedrada">
+      <img src="assets/img/mq-05.jpg" width="840" height="540" loading="lazy" alt="SUV gris en perfil">
+      <img src="assets/img/mq-06.jpg" width="840" height="540" loading="lazy" alt="Moto custom negra y dorada">
+      <img src="assets/img/mq-07.jpg" width="840" height="540" loading="lazy" alt="Coupé rojo en perfil">
+      <img src="assets/img/mq-08.jpg" width="840" height="540" loading="lazy" alt="Moto clásica al atardecer en una carretera de montaña">
+      <img src="assets/img/mq-09.jpg" width="840" height="540" loading="lazy" alt="Todoterreno negro en perfil">
+      <img src="assets/img/mq-10.jpg" width="840" height="540" loading="lazy" alt="Scooter eléctrico oscuro con una persona caminando">
+      <img src="assets/img/mq-11.jpg" width="840" height="540" loading="lazy" alt="Coche coupé de color cobre en perfil">
     </div>
     <div class="marquee__row">
-      <img src="assets/img/mq-12.svg" width="840" height="540" loading="lazy" alt="Ilustración de un SUV de color azul">
-      <img src="assets/img/mq-11.svg" width="840" height="540" loading="lazy" alt="Ilustración de un scooter de color rojo">
-      <img src="assets/img/mq-10.svg" width="840" height="540" loading="lazy" alt="Ilustración de un utilitario de color verde">
-      <img src="assets/img/mq-09.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto naked de color grafito">
-      <img src="assets/img/mq-08.svg" width="840" height="540" loading="lazy" alt="Ilustración de un familiar de color plata">
-      <img src="assets/img/mq-07.svg" width="840" height="540" loading="lazy" alt="Ilustración de un coupé de color blanco">
-      <img src="assets/img/mq-06.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto trail de color naranja">
-      <img src="assets/img/mq-05.svg" width="840" height="540" loading="lazy" alt="Ilustración de un SUV de color amarillo">
-      <img src="assets/img/mq-04.svg" width="840" height="540" loading="lazy" alt="Ilustración de un scooter de color azul">
-      <img src="assets/img/mq-03.svg" width="840" height="540" loading="lazy" alt="Ilustración de una berlina de color rojo">
+      <img src="assets/img/mq-12.jpg" width="840" height="540" loading="lazy" alt="Motorista en una carretera al atardecer">
+      <img src="assets/img/mq-11.jpg" width="840" height="540" loading="lazy" alt="Coche coupé de color cobre en perfil">
+      <img src="assets/img/mq-10.jpg" width="840" height="540" loading="lazy" alt="Scooter eléctrico oscuro con una persona caminando">
+      <img src="assets/img/mq-09.jpg" width="840" height="540" loading="lazy" alt="Todoterreno negro en perfil">
+      <img src="assets/img/mq-08.jpg" width="840" height="540" loading="lazy" alt="Moto clásica al atardecer en una carretera de montaña">
+      <img src="assets/img/mq-07.jpg" width="840" height="540" loading="lazy" alt="Coupé rojo en perfil">
+      <img src="assets/img/mq-06.jpg" width="840" height="540" loading="lazy" alt="Moto custom negra y dorada">
+      <img src="assets/img/mq-05.jpg" width="840" height="540" loading="lazy" alt="SUV gris en perfil">
+      <img src="assets/img/mq-04.jpg" width="840" height="540" loading="lazy" alt="Scooter naranja aparcado en una calle empedrada">
+      <img src="assets/img/mq-03.jpg" width="840" height="540" loading="lazy" alt="Coche deportivo naranja en perfil">
     </div>
   </section>
 
@@ -243,16 +243,16 @@
   <section class="about" id="sobre-nosotros">
 
     <div class="about__deco deco-tl" data-rv style="--rx:-80px; --rdelay:.1s; --rdur:.9s" aria-hidden="true">
-      <img src="assets/img/deco-1.svg" width="440" height="440" loading="lazy" alt="">
+      <img src="assets/img/deco-1.jpg" width="440" height="440" loading="lazy" alt="">
     </div>
     <div class="about__deco deco-bl" data-rv style="--rx:-80px; --rdelay:.25s" aria-hidden="true">
-      <img src="assets/img/deco-2.svg" width="440" height="440" loading="lazy" alt="">
+      <img src="assets/img/deco-2.jpg" width="440" height="440" loading="lazy" alt="">
     </div>
     <div class="about__deco deco-tr" data-rv style="--rx:80px; --rdelay:.15s" aria-hidden="true">
-      <img src="assets/img/deco-3.svg" width="440" height="440" loading="lazy" alt="">
+      <img src="assets/img/deco-3.jpg" width="440" height="440" loading="lazy" alt="">
     </div>
     <div class="about__deco deco-br" data-rv style="--rx:80px; --rdelay:.3s" aria-hidden="true">
-      <img src="assets/img/deco-4.svg" width="440" height="440" loading="lazy" alt="">
+      <img src="assets/img/deco-4.jpg" width="440" height="440" loading="lazy" alt="">
     </div>
 
     <h2 class="hero-heading" data-rv style="--ry:40px">Sobre nosotros</h2>
@@ -323,18 +323,18 @@
           <div class="case__top">
             <p class="case__n" aria-hidden="true">01</p>
             <div class="case__meta">
-              <span class="case__cat">Ejemplo ilustrativo</span>
+              <span class="case__cat">Ejemplo de stock</span>
               <h3 class="case__name">Utilitario urbano</h3>
             </div>
             <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
           </div>
           <div class="case__grid">
             <div class="case__col">
-              <img class="case__a" src="assets/img/case1-a.svg" width="940" height="460" loading="lazy" alt="Ilustración de un utilitario naranja en perfil">
-              <img class="case__b" src="assets/img/case1-b.svg" width="940" height="676" loading="lazy" alt="Ilustración de un utilitario naranja, plano medio">
+              <img class="case__a" src="assets/img/case1-a.jpg" width="940" height="460" loading="lazy" alt="Coche coupé de color cobre en perfil">
+              <img class="case__b" src="assets/img/case1-b.jpg" width="940" height="676" loading="lazy" alt="SUV azul en perfil">
             </div>
             <div class="case__col">
-              <img class="case__c" src="assets/img/case1-c.svg" width="1200" height="980" loading="lazy" alt="Ilustración de un utilitario naranja, vista completa">
+              <img class="case__c" src="assets/img/case1-c.jpg" width="1200" height="980" loading="lazy" alt="Coche coupé azul en perfil">
             </div>
           </div>
         </article>
@@ -345,18 +345,18 @@
           <div class="case__top">
             <p class="case__n" aria-hidden="true">02</p>
             <div class="case__meta">
-              <span class="case__cat">Ejemplo ilustrativo</span>
+              <span class="case__cat">Ejemplo de stock</span>
               <h3 class="case__name">Moto naked</h3>
             </div>
             <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
           </div>
           <div class="case__grid">
             <div class="case__col">
-              <img class="case__a" src="assets/img/case2-a.svg" width="940" height="460" loading="lazy" alt="Ilustración de una moto naked grafito en perfil">
-              <img class="case__b" src="assets/img/case2-b.svg" width="940" height="676" loading="lazy" alt="Ilustración de una moto naked grafito, plano medio">
+              <img class="case__a" src="assets/img/case2-a.jpg" width="940" height="460" loading="lazy" alt="Moto eléctrica naranja y negra frente a una pared">
+              <img class="case__b" src="assets/img/case2-b.jpg" width="940" height="676" loading="lazy" alt="Moto deportiva roja en un aparcamiento">
             </div>
             <div class="case__col">
-              <img class="case__c" src="assets/img/case2-c.svg" width="1200" height="980" loading="lazy" alt="Ilustración de una moto naked grafito, vista completa">
+              <img class="case__c" src="assets/img/case2-c.jpg" width="1200" height="980" loading="lazy" alt="Moto deportiva negra sobre fondo azul">
             </div>
           </div>
         </article>
@@ -367,18 +367,18 @@
           <div class="case__top">
             <p class="case__n" aria-hidden="true">03</p>
             <div class="case__meta">
-              <span class="case__cat">Ejemplo ilustrativo</span>
+              <span class="case__cat">Ejemplo de stock</span>
               <h3 class="case__name">SUV familiar</h3>
             </div>
             <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
           </div>
           <div class="case__grid">
             <div class="case__col">
-              <img class="case__a" src="assets/img/case3-a.svg" width="940" height="460" loading="lazy" alt="Ilustración de un SUV azul en perfil">
-              <img class="case__b" src="assets/img/case3-b.svg" width="940" height="676" loading="lazy" alt="Ilustración de un SUV azul, plano medio">
+              <img class="case__a" src="assets/img/case3-a.jpg" width="940" height="460" loading="lazy" alt="SUV gris en perfil">
+              <img class="case__b" src="assets/img/case3-b.jpg" width="940" height="676" loading="lazy" alt="Todoterreno negro en perfil">
             </div>
             <div class="case__col">
-              <img class="case__c" src="assets/img/case3-c.svg" width="1200" height="980" loading="lazy" alt="Ilustración de un SUV azul, vista completa">
+              <img class="case__c" src="assets/img/case3-c.jpg" width="1200" height="980" loading="lazy" alt="SUV azul oscuro visto desde atrás en un bosque">
             </div>
           </div>
         </article>
@@ -502,8 +502,8 @@
           Esta es una demo de WhiteMoon para un concesionario de coches y
           motos, y WhiteMoon Motor es un negocio ficticio. El teléfono, el
           email y el mapa son reales, así que los enlaces funcionan; en la web
-          de un cliente irían los suyos. Los vehículos son ilustraciones
-          genéricas, sin marcas ni modelos reales, y no hay precios, reseñas ni
+          de un cliente irían los suyos. Los vehículos son fotos de archivo
+          de Unsplash y no corresponden a stock real; no hay precios, reseñas ni
           cifras: no se inventa nada. Aquí irían el stock real, sus fotos y
           sus condiciones.
         </p>
