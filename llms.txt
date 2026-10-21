@@ -1,14 +1,14 @@
 # WhiteMoon Motor
 
-> Concesionario de coches y motos en el noroeste de Madrid: coches nuevos y de ocasión, motos y scooters, financiación explicada, tasación del vehículo y prueba de conducción. Es una DEMO de WhiteMoon Agencia IA con marca de ejemplo: no es un concesionario real y no contiene precios, reseñas, años de experiencia ni vehículos reales (son ilustraciones genéricas).
+> Concesionario de coches y motos en Madrid Oeste: coches nuevos y de ocasión, motos y scooters, financiación explicada, tasación del vehículo y prueba de conducción. Es una DEMO de WhiteMoon Agencia IA con negocio ficticio: no es un concesionario real y no contiene precios, reseñas, años de experiencia ni vehículos reales (son fotos de archivo).
 
 ## Páginas
 
-- [WhiteMoon Motor](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/): landing única con servicios, stock de ejemplo y preguntas frecuentes.
-- [Servicios](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#servicios): coches, motos, financiación, tasación y prueba de conducción.
-- [Stock de ejemplo](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#proyectos): tres vehículos ilustrativos.
+- [WhiteMoon Motor](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/): landing única.
+- [Servicios](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#servicios): coches, motos, scooters, financiación y tasación.
+- [Condiciones](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#condiciones): qué se explica por escrito antes de decidir (sin precios).
 - [Preguntas frecuentes](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#faq): prueba, entrega del vehículo, financiación, garantía y documentación.
-- [Contacto](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#contacto): acceso al asistente IA.
+- [Contacto](https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#contacto): asistente de IA Nico para reservar la prueba.
 
 ## Contacto
 

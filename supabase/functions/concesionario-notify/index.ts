@@ -10,8 +10,8 @@ import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 // negocio llega dentro de `mensaje` tras el prefijo "Tipo de negocio: "
 // (lo fija assets/js/agente.js; si cambia allí, cambiarlo aquí).
 //
-// Recibe (POST JSON): { nombre, telefono, mensaje, origen } (+ sector y
-// servicio, que ya no se muestran).
+// Recibe (POST JSON): { nombre, telefono, motivo, dia, hora, urgencia, origen }
+// (reserva desde el chat) o { nombre, telefono, mensaje, origen } (prospecto).
 // El cliente la llama con navigator.sendBeacon, que envía el cuerpo como
 // Blob text/plain: por eso el parseo NO depende del Content-Type, se lee el
 // texto y se intenta JSON.parse.
@@ -51,19 +51,29 @@ Deno.serve(async (req: Request) => {
   const nombre = String(data.nombre ?? "").trim();
   const telefono = String(data.telefono ?? "").trim();
   const mensaje = String(data.mensaje ?? "").trim();
+  const motivo = String(data.motivo ?? "").trim();
+  const dia = String(data.dia ?? "").trim();
+  const hora = String(data.hora ?? "").trim();
   const negocio = (mensaje.match(/Tipo de negocio:\s*(.+)$/)?.[1] ?? "").trim();
-  const origen = String(data.origen ?? "demo-concesionario").trim();
+  const origen = String(data.origen ?? "concesionario-demo").trim();
 
   // Guard de lead incompleto — estándar WhiteMoon.
   if (!nombre || !telefono) {
     return json({ ok: false, error: "lead incompleto" }, 400);
   }
 
-  const message =
-    `🔔 PROSPECTO DE AGENCIA · vino de la demo del concesionario (${origen})\n` +
-    `Nombre: ${nombre || "-"}\n` +
-    `Teléfono: ${telefono || "-"}\n` +
-    `Tipo de negocio: ${negocio || "-"}`;
+  // Dos formatos: reserva desde el chat de la demo (motivo + día + hora) o,
+  // por compatibilidad, el prospecto de agencia de la versión anterior.
+  const message = motivo || dia || hora
+    ? `🔔 PRUEBA / CITA · demo del concesionario (${origen})\n` +
+      `Nombre: ${nombre}\n` +
+      `Teléfono: ${telefono}\n` +
+      `Motivo: ${motivo || "-"}\n` +
+      `Día: ${dia || "-"} · Hora: ${hora || "-"}`
+    : `🔔 PROSPECTO DE AGENCIA · vino de la demo del concesionario (${origen})\n` +
+      `Nombre: ${nombre}\n` +
+      `Teléfono: ${telefono}\n` +
+      `Tipo de negocio: ${negocio || "-"}`;
 
   let notified = false;
   try {
