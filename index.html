@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhiteMoon Motor — Concesionario de coches y motos</title>
+<meta name="description" content="Concesionario de coches y motos en el noroeste de Madrid: nuevos y de ocasión, prueba de conducción, financiación explicada y tasación. Habla con el agente IA.">
+<meta name="author" content="WhiteMoon">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F6F4EF">
+<link rel="canonical" href="https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/">
+<link rel="alternate" hreflang="es" href="https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/">
+<link rel="alternate" hreflang="x-default" href="https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/">
+
+<!-- Señales GEO -->
+<meta name="geo.region" content="ES-MD">
+<meta name="geo.placename" content="Majadahonda, Madrid, España">
+<meta name="ICBM" content="40.4737, -3.8716">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="WhiteMoon">
+<meta property="og:url" content="https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/">
+<meta property="og:title" content="WhiteMoon Motor — Concesionario de coches y motos">
+<meta property="og:description" content="Concesionario de coches y motos en el noroeste de Madrid: nuevos y de ocasión, prueba de conducción, financiación explicada y tasación. Habla con el agente IA.">
+<meta property="og:image" content="https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/assets/img/og-concesionario.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ilustración de un SUV naranja y una moto naked en un estudio">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WhiteMoon Motor — Concesionario de coches y motos">
+<meta name="twitter:description" content="Concesionario de coches y motos en el noroeste de Madrid: nuevos y de ocasión, prueba de conducción, financiación explicada y tasación. Habla con el agente IA.">
+<meta name="twitter:image" content="https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/assets/img/og-concesionario.jpg">
+
+<!--
+  Kanit va autoalojada en assets/fonts (subset latin). Se precarga solo el
+  peso 900, que es el del titular del hero: así el texto ya se pinta con la
+  tipografía definitiva y no hay reflow al llegar la fuente. El resto de
+  pesos entra por CSS con font-display:swap.
+  Las imágenes son ilustraciones propias (SVG) generadas con scripts/gen_ilustraciones.py.
+-->
+<!-- Sin favicon el navegador pide /favicon.ico igualmente y el 404 acaba en
+     la consola (y en el informe de Lighthouse). Se declaran los tres. -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preload" href="assets/fonts/kanit-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/hero.svg" as="image" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<!--
+  JSON-LD en un único @graph. AutoDealer y MotorcycleDealer son subtipos
+  válidos de LocalBusiness. Negocio FICTICIO (demo de WhiteMoon). Las
+  respuestas del FAQPage coinciden palabra por palabra con el DOM visible.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["AutoDealer", "MotorcycleDealer"],
+      "@id": "https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#negocio",
+      "name": "WhiteMoon Motor",
+      "description": "Concesionario ficticio de coches y motos, nuevos y de ocasión, con prueba de conducción, financiación explicada y tasación del vehículo. Demo de WhiteMoon Agencia IA.",
+      "url": "https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/",
+      "image": "https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/assets/img/og-concesionario.jpg",
+      "address": { "@type": "PostalAddress", "addressLocality": "Majadahonda", "addressRegion": "Madrid", "addressCountry": "ES" },
+      "geo": { "@type": "GeoCoordinates", "latitude": 40.4737104, "longitude": -3.8715623 },
+      "areaServed": [
+        { "@type": "City", "name": "Majadahonda" },
+        { "@type": "City", "name": "Las Rozas de Madrid" },
+        { "@type": "City", "name": "Pozuelo de Alarcón" },
+        { "@type": "City", "name": "Boadilla del Monte" },
+        { "@type": "City", "name": "Torrelodones" }
+      ],
+      "telephone": "+34643199580",
+      "email": "comercial@whitemoon.es",
+      "sameAs": ["https://whitemoon.es/"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios del concesionario",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Coches nuevos y de ocasión" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motos y scooters" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Financiación explicada" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tasación de tu vehículo" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prueba de conducción y postventa" } }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#migas",
+      "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/" }]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Puedo probar el vehículo antes de comprarlo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Reservas una prueba de conducción con el agente, eliges día y hora, y la haces con calma. Para las motos pedimos el carné correspondiente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cogéis mi coche o mi moto como parte del pago?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Valoramos tu vehículo según su estado, kilometraje y documentación, y te decimos qué entra como entrega. La valoración no te compromete a comprar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ofrecéis financiación?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Te explicamos las opciones disponibles, con las condiciones por escrito y sin letra pequeña. Las condiciones concretas dependen de la entidad financiera y de tu situación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué garantía tienen los vehículos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de si es nuevo o de ocasión y de su antigüedad. Antes de la compra te explicamos por escrito qué cubre la garantía y durante cuánto tiempo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué documentación necesito para comprar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tu DNI o NIE y el permiso de conducir. Si entregas un vehículo, su permiso de circulación y la ficha técnica; con eso preparamos el cambio de titularidad."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="wrapper">
+
+  <!--
+    Barra fija. Va FUERA del hero a propósito: position:sticky solo pega
+    dentro de su contenedor, así que dentro del hero dejaría de estarlo al
+    pasar de largo. Como hermana de .wrapper, acompaña toda la página.
+  -->
+  <nav class="nav" aria-label="Navegación principal"
+       data-rv style="--ry:-20px; --rdelay:0s">
+
+    <!-- Logo de la marca: vuelve al inicio de ESTA web. Se usa "#top" y no
+         "/" porque en GitHub Pages la raíz sale del subdirectorio del repo.
+         El emblema lleva el alt, y el wordmark de al lado va aria-hidden
+         para que un lector no diga "WhiteMoon" dos veces. -->
+    <a class="wm" href="#top">
+      <picture>
+        <source srcset="assets/img/whitemoon-logo.webp" type="image/webp">
+        <img src="assets/img/whitemoon-logo.png" width="119" height="124" alt="WhiteMoon">
+      </picture>
+      <span aria-hidden="true">WhiteMoon</span>
+    </a>
+
+    <div class="nav__links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Stock</a>
+      <button type="button" data-agente>Habla con el agente</button>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Un único <main>: el nav queda fuera y el footer también. -->
+  <main id="contenido" tabindex="-1">
+
+  <!-- =================================================== 1. HERO ===== -->
+  <header class="hero" id="top">
+
+    <div class="hero__title">
+      <h1 class="hero-heading" data-rv style="--ry:40px; --rdelay:.15s">coches y motos</h1>
+    </div>
+
+    <div class="hero__bar">
+      <p data-rv style="--ry:20px; --rdelay:.35s">
+        concesionario de coches y motos nuevos y de ocasión, con prueba
+        de conducción, financiación explicada y tasación de tu vehículo
+      </p>
+      <button class="btn btn--primary" type="button" data-agente
+              data-rv style="--ry:20px; --rdelay:.5s">
+        Habla con el agente
+      </button>
+    </div>
+
+    <!-- [IMG_HERO] -->
+    <div class="hero__img magnet" data-magnet data-rv style="--ry:30px; --rdelay:.6s">
+      <img src="assets/img/hero.svg" width="1040" height="693" fetchpriority="high"
+           alt="Ilustración de un SUV naranja y una moto naked grafito en un estudio">
+    </div>
+  </header>
+
+  <!-- ================================================ 2. MARQUEE ===== -->
+  <section class="marquee" data-marquee aria-label="Ilustraciones de coches y motos">
+    <div class="marquee__row">
+      <img src="assets/img/mq-01.svg" width="840" height="540" loading="lazy" alt="Ilustración de un utilitario de color grafito">
+      <img src="assets/img/mq-02.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto naked de color verde">
+      <img src="assets/img/mq-03.svg" width="840" height="540" loading="lazy" alt="Ilustración de una berlina de color rojo">
+      <img src="assets/img/mq-04.svg" width="840" height="540" loading="lazy" alt="Ilustración de un scooter de color azul">
+      <img src="assets/img/mq-05.svg" width="840" height="540" loading="lazy" alt="Ilustración de un SUV de color amarillo">
+      <img src="assets/img/mq-06.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto trail de color naranja">
+      <img src="assets/img/mq-07.svg" width="840" height="540" loading="lazy" alt="Ilustración de un coupé de color blanco">
+      <img src="assets/img/mq-08.svg" width="840" height="540" loading="lazy" alt="Ilustración de un familiar de color plata">
+      <img src="assets/img/mq-09.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto naked de color grafito">
+      <img src="assets/img/mq-10.svg" width="840" height="540" loading="lazy" alt="Ilustración de un utilitario de color verde">
+      <img src="assets/img/mq-11.svg" width="840" height="540" loading="lazy" alt="Ilustración de un scooter de color rojo">
+    </div>
+    <div class="marquee__row">
+      <img src="assets/img/mq-12.svg" width="840" height="540" loading="lazy" alt="Ilustración de un SUV de color azul">
+      <img src="assets/img/mq-11.svg" width="840" height="540" loading="lazy" alt="Ilustración de un scooter de color rojo">
+      <img src="assets/img/mq-10.svg" width="840" height="540" loading="lazy" alt="Ilustración de un utilitario de color verde">
+      <img src="assets/img/mq-09.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto naked de color grafito">
+      <img src="assets/img/mq-08.svg" width="840" height="540" loading="lazy" alt="Ilustración de un familiar de color plata">
+      <img src="assets/img/mq-07.svg" width="840" height="540" loading="lazy" alt="Ilustración de un coupé de color blanco">
+      <img src="assets/img/mq-06.svg" width="840" height="540" loading="lazy" alt="Ilustración de una moto trail de color naranja">
+      <img src="assets/img/mq-05.svg" width="840" height="540" loading="lazy" alt="Ilustración de un SUV de color amarillo">
+      <img src="assets/img/mq-04.svg" width="840" height="540" loading="lazy" alt="Ilustración de un scooter de color azul">
+      <img src="assets/img/mq-03.svg" width="840" height="540" loading="lazy" alt="Ilustración de una berlina de color rojo">
+    </div>
+  </section>
+
+  <!-- ========================================== 3. SOBRE NOSOTROS ===== -->
+  <section class="about" id="sobre-nosotros">
+
+    <div class="about__deco deco-tl" data-rv style="--rx:-80px; --rdelay:.1s; --rdur:.9s" aria-hidden="true">
+      <img src="assets/img/deco-1.svg" width="440" height="440" loading="lazy" alt="">
+    </div>
+    <div class="about__deco deco-bl" data-rv style="--rx:-80px; --rdelay:.25s" aria-hidden="true">
+      <img src="assets/img/deco-2.svg" width="440" height="440" loading="lazy" alt="">
+    </div>
+    <div class="about__deco deco-tr" data-rv style="--rx:80px; --rdelay:.15s" aria-hidden="true">
+      <img src="assets/img/deco-3.svg" width="440" height="440" loading="lazy" alt="">
+    </div>
+    <div class="about__deco deco-br" data-rv style="--rx:80px; --rdelay:.3s" aria-hidden="true">
+      <img src="assets/img/deco-4.svg" width="440" height="440" loading="lazy" alt="">
+    </div>
+
+    <h2 class="hero-heading" data-rv style="--ry:40px">Sobre nosotros</h2>
+
+    <p class="about__text" data-chars>En WhiteMoon Motor buscamos que elijas vehículo con toda la información delante: historial, kilómetros y papeles claros. Coches y motos, nuevos y de ocasión, con prueba de conducción y financiación explicada, sin prisas.</p>
+
+    <div class="about__cta">
+      <button class="btn btn--primary" type="button" data-agente>Habla con el agente</button>
+    </div>
+  </section>
+
+  <!-- =============================================== 4. SERVICIOS ===== -->
+  <section class="services" id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="services__list">
+      <article class="service" data-rv style="--ry:24px; --rdelay:0.0s">
+        <p class="service__n" aria-hidden="true">01</p>
+        <div class="service__b">
+          <h3>Coches nuevos y de ocasión</h3>
+          <p>Berlinas, SUV, utilitarios y familiares con el historial, los kilómetros y los papeles claros antes de que decidas.</p>
+        </div>
+      </article>
+
+      <article class="service" data-rv style="--ry:24px; --rdelay:0.1s">
+        <p class="service__n" aria-hidden="true">02</p>
+        <div class="service__b">
+          <h3>Motos y scooters</h3>
+          <p>Naked, trail, scooters y motos para el día a día, con la información del vehículo y su documentación a la vista.</p>
+        </div>
+      </article>
+
+      <article class="service" data-rv style="--ry:24px; --rdelay:0.2s">
+        <p class="service__n" aria-hidden="true">03</p>
+        <div class="service__b">
+          <h3>Financiación explicada</h3>
+          <p>Te explicamos las opciones de pago y financiación con las condiciones por escrito, para que compares con tranquilidad.</p>
+        </div>
+      </article>
+
+      <article class="service" data-rv style="--ry:24px; --rdelay:0.3s">
+        <p class="service__n" aria-hidden="true">04</p>
+        <div class="service__b">
+          <h3>Tasación de tu vehículo</h3>
+          <p>Valoramos tu coche o tu moto sin compromiso y te decimos qué entra como parte del pago si te decides por otro.</p>
+        </div>
+      </article>
+
+      <article class="service" data-rv style="--ry:24px; --rdelay:0.4s">
+        <p class="service__n" aria-hidden="true">05</p>
+        <div class="service__b">
+          <h3>Prueba de conducción y postventa</h3>
+          <p>Reserva tu prueba por día y hora, y después te acompañamos con revisiones, trámites y cambio de titularidad.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =============================================== 5. PROYECTOS ===== -->
+  <section class="work" id="proyectos">
+    <h2 class="hero-heading" data-rv style="--ry:40px">Stock de ejemplo</h2>
+
+    <div class="cases">
+
+      <div class="case-slot">
+        <article class="case" style="--i:0">
+          <div class="case__top">
+            <p class="case__n" aria-hidden="true">01</p>
+            <div class="case__meta">
+              <span class="case__cat">Ejemplo ilustrativo</span>
+              <h3 class="case__name">Utilitario urbano</h3>
+            </div>
+            <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
+          </div>
+          <div class="case__grid">
+            <div class="case__col">
+              <img class="case__a" src="assets/img/case1-a.svg" width="940" height="460" loading="lazy" alt="Ilustración de un utilitario naranja en perfil">
+              <img class="case__b" src="assets/img/case1-b.svg" width="940" height="676" loading="lazy" alt="Ilustración de un utilitario naranja, plano medio">
+            </div>
+            <div class="case__col">
+              <img class="case__c" src="assets/img/case1-c.svg" width="1200" height="980" loading="lazy" alt="Ilustración de un utilitario naranja, vista completa">
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="case-slot">
+        <article class="case" style="--i:1">
+          <div class="case__top">
+            <p class="case__n" aria-hidden="true">02</p>
+            <div class="case__meta">
+              <span class="case__cat">Ejemplo ilustrativo</span>
+              <h3 class="case__name">Moto naked</h3>
+            </div>
+            <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
+          </div>
+          <div class="case__grid">
+            <div class="case__col">
+              <img class="case__a" src="assets/img/case2-a.svg" width="940" height="460" loading="lazy" alt="Ilustración de una moto naked grafito en perfil">
+              <img class="case__b" src="assets/img/case2-b.svg" width="940" height="676" loading="lazy" alt="Ilustración de una moto naked grafito, plano medio">
+            </div>
+            <div class="case__col">
+              <img class="case__c" src="assets/img/case2-c.svg" width="1200" height="980" loading="lazy" alt="Ilustración de una moto naked grafito, vista completa">
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="case-slot">
+        <article class="case" style="--i:2">
+          <div class="case__top">
+            <p class="case__n" aria-hidden="true">03</p>
+            <div class="case__meta">
+              <span class="case__cat">Ejemplo ilustrativo</span>
+              <h3 class="case__name">SUV familiar</h3>
+            </div>
+            <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
+          </div>
+          <div class="case__grid">
+            <div class="case__col">
+              <img class="case__a" src="assets/img/case3-a.svg" width="940" height="460" loading="lazy" alt="Ilustración de un SUV azul en perfil">
+              <img class="case__b" src="assets/img/case3-b.svg" width="940" height="676" loading="lazy" alt="Ilustración de un SUV azul, plano medio">
+            </div>
+            <div class="case__col">
+              <img class="case__c" src="assets/img/case3-c.svg" width="1200" height="980" loading="lazy" alt="Ilustración de un SUV azul, vista completa">
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="faq__in">
+      <h2 class="hero-heading" data-rv style="--ry:40px">Preguntas</h2>
+
+      <details>
+        <summary>¿Puedo probar el vehículo antes de comprarlo?</summary>
+        <p class="faq__a">Sí. Reservas una prueba de conducción con el agente, eliges día y hora, y la haces con calma. Para las motos pedimos el carné correspondiente.</p>
+      </details>
+
+      <details>
+        <summary>¿Cogéis mi coche o mi moto como parte del pago?</summary>
+        <p class="faq__a">Sí. Valoramos tu vehículo según su estado, kilometraje y documentación, y te decimos qué entra como entrega. La valoración no te compromete a comprar.</p>
+      </details>
+
+      <details>
+        <summary>¿Ofrecéis financiación?</summary>
+        <p class="faq__a">Te explicamos las opciones disponibles, con las condiciones por escrito y sin letra pequeña. Las condiciones concretas dependen de la entidad financiera y de tu situación.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué garantía tienen los vehículos?</summary>
+        <p class="faq__a">Depende de si es nuevo o de ocasión y de su antigüedad. Antes de la compra te explicamos por escrito qué cubre la garantía y durante cuánto tiempo.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué documentación necesito para comprar?</summary>
+        <p class="faq__a">Tu DNI o NIE y el permiso de conducir. Si entregas un vehículo, su permiso de circulación y la ficha técnica; con eso preparamos el cambio de titularidad.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================================================= CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="contact__in">
+
+      <div class="contact__col">
+        <h2 class="hero-heading" data-rv style="--ry:30px">Contacto</h2>
+        <p data-rv style="--ry:20px; --rdelay:.1s">
+          Cuéntale al agente qué vehículo buscas y te respondemos con una
+          propuesta, sin compromiso.
+        </p>
+
+        <div class="contact__cta" data-rv style="--ry:20px; --rdelay:.15s">
+          <button class="btn btn--primary" type="button" data-agente>Habla con el agente</button>
+        </div>
+
+        <!-- Datos de contacto reales de WhiteMoon: los enlaces funcionan. -->
+        <div class="contact__card" data-rv style="--ry:20px; --rdelay:.2s">
+          <p class="contact__tag">Datos de contacto</p>
+
+          <ul class="contact__data">
+            <li>
+              <span class="contact__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6.3 3h3l1.5 4-2 1.4a12 12 0 0 0 5.8 5.8l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.3 5.2 2 2 0 0 1 6.3 3z"/>
+                </svg>
+              </span>
+              <span class="contact__val">
+                <a href="tel:+34643199580">643 199 580</a>
+                <span>Teléfono y WhatsApp</span>
+              </span>
+            </li>
+
+            <li>
+              <span class="contact__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/>
+                </svg>
+              </span>
+              <span class="contact__val">
+                <a href="mailto:comercial@whitemoon.es">comercial@whitemoon.es</a>
+                <span>Email</span>
+              </span>
+            </li>
+
+            <li>
+              <span class="contact__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/>
+                </svg>
+              </span>
+              <span class="contact__val">
+                <a href="https://maps.google.com/maps?q=WhiteMoon+Agencia+IA+Majadahonda" target="_blank" rel="noopener">Majadahonda, Madrid</a>
+                <span>Ubicación</span>
+              </span>
+            </li>
+          </ul>
+
+          <a class="btn btn--ghost contact__wa" href="https://wa.me/34643199580"
+             target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.3L3 21l2.2-5.4A8.4 8.4 0 1 1 21 11.5z"/>
+              <path d="M8.6 9.2c0 3.4 2.8 6.2 6.2 6.2l1.1-1.6-2-1-1 .9a5 5 0 0 1-2.6-2.6l.9-1-1-2-1.6 1.1z" fill="currentColor" stroke="none"/>
+            </svg>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__map" data-rv style="--ry:24px; --rdelay:.25s">
+        <iframe
+          src="https://maps.google.com/maps?q=40.4737104,-3.8715623&amp;z=16&amp;output=embed"
+          title="Ubicación en el mapa"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="contact__nota">
+      <div class="slot" data-rv style="--ry:20px; --rdelay:.1s">
+        <b>Hueco reservado</b>
+        <p>
+          Esta es una demo de WhiteMoon para un concesionario de coches y
+          motos, y WhiteMoon Motor es un negocio ficticio. El teléfono, el
+          email y el mapa son reales, así que los enlaces funcionan; en la web
+          de un cliente irían los suyos. Los vehículos son ilustraciones
+          genéricas, sin marcas ni modelos reales, y no hay precios, reseñas ni
+          cifras: no se inventa nada. Aquí irían el stock real, sus fotos y
+          sus condiciones.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__in">
+      <p>WhiteMoon Motor · Demo</p>
+      <p>Agencia IA · Majadahonda, Madrid</p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/lead.js" defer></script>
+<script src="assets/js/agente.js" defer></script>
+</body>
+</html>

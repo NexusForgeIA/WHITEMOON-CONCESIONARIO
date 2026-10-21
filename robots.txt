@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Demo: noindex en la página. Rastreadores de IA permitidos por coherencia con WhiteMoon.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/sitemap.xml
+
+# llms.txt: https://nexusforgeia.github.io/WHITEMOON-CONCESIONARIO/llms.txt
